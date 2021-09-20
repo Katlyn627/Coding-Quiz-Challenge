@@ -26,16 +26,6 @@ var questions = [
         answer: "console log"
     },
     {
-        title: "Sal needs to execute a section of code ten times within a program. Compare the selection structures below and select which one meets the needs identified.",
-        choices: ["If-Else", "For", "While", "If"],
-        answer: "For"
-    },
-    {
-        title: "Kim has just constructed her first for loop within the Java language.  Which of the following is not a required part of a for loop?",
-        choices: ["Initialization", "Condition", "Variable", "Increment"],
-        answer: "Variable"
-    },
-    {
         title: "Who created Javascript?",
         choices: ["Brendan Eich", "Bill Gates", "Tim Berners-Lee", "Dave Shea"],
         answer: "Brendan Eich"
