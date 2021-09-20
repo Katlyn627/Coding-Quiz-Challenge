@@ -20,7 +20,9 @@
 }
 /* Created timer styling */
 #currentTime {
-    float: right;
+    position:fixed;
+    top:0px;
+    right:0px;
 }
 /* Created back button styling */
 #goBack {
