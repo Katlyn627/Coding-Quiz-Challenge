@@ -42,3 +42,21 @@ var questions = [
     },
 
 ];
+// Declared variables
+var score = 0;
+var questionIndex = 0;
+
+// Declared variables for working code functions
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startTime");
+var questionsDiv = document.querySelector("#questionsDiv");
+var wrapper = document.querySelector("#maincontent");
+
+// Created variables for timer function
+var secondsLeft = 120;
+// Hold interval for timem
+var holdInterval = 0;
+// Holds penalty time for incorrect questions
+var penalty = 10;
+// Creates new element
+var ulCreate = document.createElement("ul");
