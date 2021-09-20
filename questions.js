@@ -126,7 +126,7 @@ function compare(event) {
 
 }
 // All done will append last page
-function allDone(createSubmit) {
+function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
@@ -178,10 +178,11 @@ function allDone(createSubmit) {
 
     // Created event listener to capture initials and score and save to local storage 
     createSubmit.addEventListener("click", function () {
+        // debugger
         var initials = createInput.value;
-        
-        if (initials === null) {
-            
+        console.log(initials);
+        if (initials === "") {
+            createInput.style.borderColor = "red";
             console.log("No value entered!");
 
         } else {

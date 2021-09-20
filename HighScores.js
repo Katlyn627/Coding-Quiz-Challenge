@@ -1,6 +1,6 @@
-var highScore = document.querySelector("#highscore");
+var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
-var goBack = document.querySelector("#goback");
+var goBack = document.querySelector("#goBack");
 
 // Add event listener to clear scores 
 clear.addEventListener("click", function () {
@@ -8,7 +8,7 @@ clear.addEventListener("click", function () {
     location.reload();
 });
 // Creat if else to retreive local stroage 
-var allScores = localStorage.getItem("allscores");
+var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
 if (allScores !== null) {
@@ -24,4 +24,5 @@ if (allScores !== null) {
 // Event listener to move to index page
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
+    
 });
