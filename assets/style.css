@@ -15,10 +15,10 @@
     color: white;
 }
 /* Created questions styling */
-#questions {
+#questionDiv {
     margin: 20px;
 }
 /* Created timer styling */
-#timer {
+#startTimer {
     float: right;
 }
