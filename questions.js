@@ -181,10 +181,17 @@ function allDone() {
 
         questionsDiv.appendChild(createP2);
     }
-// Create element label
-var createLabel = document.createElement("label");
-createLabel.setAttribute("id", "createLabel");
-createLabel.textContent = "Enter your initials: ";
+    // Create element label
+    var createLabel = document.createElement("label");
+    createLabel.setAttribute("id", "createLabel");
+    createLabel.textContent = "Enter your initials: ";
 
-questionsDiv.appendChild(createLabel);
+    questionsDiv.appendChild(createLabel);
 
+    // Create input element
+    var createInput = document.createElement("input");
+    createInput.setAttribute("type", "text");
+    createInput.setAttribute("id", "initials");
+    createInput.textContent = "";
+
+    questionsDiv.appendChild(createInput);
