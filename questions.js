@@ -179,9 +179,9 @@ function allDone(createSubmit) {
     // Created event listener to capture initials and score and save to local storage 
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
-
+        
         if (initials === null) {
-
+            
             console.log("No value entered!");
 
         } else {
