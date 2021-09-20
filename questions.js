@@ -54,7 +54,7 @@ var wrapper = document.querySelector("#maincontent");
 
 // Created variables for timer function
 var secondsLeft = 120;
-// Hold interval for timem
+// Hold interval for time
 var holdInterval = 0;
 // Holds penalty time for incorrect questions
 var penalty = 10;
@@ -120,4 +120,37 @@ function render(questionIndex) {
         ulCreate.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
+}
+// Create function to compare choices with correct answer
+function compare(event) {
+    var element = event.target;
+
+    if (element.matches("li")) {
+
+        var createDiv = document.createElement("div");
+        createDiv.setAttribute("id", "createDiv");
+        // Correct condition will increment score
+        if (element.textContent == questions[questionIndex].answer) {
+            score++;
+            createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+            // Correct condition 
+        } else {
+            // Else statement to deduct -10 seconds off secondsLeft for wrong answers and gives wrong answer statement below
+            secondsLeft = secondsLeft - penalty;
+            createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+        }
+
+    }
+    // Question Index determines number question user is on to determine end of quiz (reaching last question)
+    questionIndex++;
+
+    if (questionIndex >= questions.length) {
+        // All done function will append last page with user stats
+        allDone();
+        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+    } else {
+        render(questionIndex);
+    }
+    questionsDiv.appendChild(createDiv);
+
 }
