@@ -46,3 +46,30 @@
     right: 5%;
     text-align: center;
 }
+/* Adjust label and input styling */
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+/* Create h1 styling */
+h1 {
+    text-align: center;
+}
+/* Create line styling */
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+/* reate div styling */
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
