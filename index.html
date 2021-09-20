@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Created style link -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <!-- Created title for code quiz -->
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <!-- Created link to highscores web page -->
+    <a href="highscores.html">View Highscores</a>
+    <!-- This is the main content of the quiz page -->
+    <div id="maincontent">
+        <!-- Created a div id for current time -->
+        <div id="currentTime"></div>
+        <!-- Created a div id for quiz content -->
+        <div id="questionsDiv">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Welcome coders! Here's a fun mini-quiz to test your base knowledge on HTML, Javascript and CSS fundamentals.
+            <br>Try to answer the following questiosn within the alloted time.
+            <br> Keep in mind that incorrect answers will penalize your time by ten seconds!</p>
+            <ul id="choicesUl"></ul>
+            <!-- Created button to start quiz -->
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+    </div>
+
+
+    <script src="questions.js"></script>
+
+
+</body>
+
+</html>
