@@ -47,7 +47,7 @@ var score = 0;
 var questionIndex = 0;
 
 // Declared variables for working code functions
-var currentTime = document.querySelector("#currentTime");
+var currentTime = document.querySelector("#currentTimer");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#maincontent");
@@ -65,10 +65,10 @@ var score = 0;
 var questionIndex = 0;
 
 // Declared variables for working code functions
-var currentTime = document.querySelector("#currentTime");
+var startTimer = document.querySelector("#startTimer");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#maincontent");
+var maincontent = document.querySelector("#maincontent");
 
 // Created variables for timer function
 var secondsLeft = 120;
@@ -86,13 +86,13 @@ timer.addEventListener("click", function () {
         holdInterval = setInterval(function () {
             // Decrement timer by seconds
             secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
+            startTimer.textContent = "Time: " + secondsLeft;
             // Shows current time counting down by 1 second
             // Create if statement for when time runs out.
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
-                currentTime.textContent = "Time's up!";
+                startTimer.textContent = "Time's up!";
             }
         }, 1000);
     }
@@ -157,7 +157,7 @@ function compare(event) {
 // Create quiz end fuction and append last page
 function allDone() {
     questionsDiv.innerHTML = "";
-    currentTime.innerHTML = "";
+    startTimer.innerHTML = "";
 
     // Create heading for end of quiz page:
     var createH1 = document.createElement("h1");
