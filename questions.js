@@ -181,3 +181,10 @@ function allDone() {
 
         questionsDiv.appendChild(createP2);
     }
+// Create element label
+var createLabel = document.createElement("label");
+createLabel.setAttribute("id", "createLabel");
+createLabel.textContent = "Enter your initials: ";
+
+questionsDiv.appendChild(createLabel);
+
