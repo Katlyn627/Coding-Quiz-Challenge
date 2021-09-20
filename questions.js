@@ -60,3 +60,40 @@ var holdInterval = 0;
 var penalty = 10;
 // Creates new element
 var ulCreate = document.createElement("ul");
+// Declared variables
+var score = 0;
+var questionIndex = 0;
+
+// Declared variables for working code functions
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startTime");
+var questionsDiv = document.querySelector("#questionsDiv");
+var wrapper = document.querySelector("#maincontent");
+
+// Created variables for timer function
+var secondsLeft = 120;
+// Hold interval for timem
+var holdInterval = 0;
+// Holds penalty time for incorrect questions
+var penalty = 10;
+// Creates new element
+var ulCreate = document.createElement("ul");
+
+// Created starter trigger for timer on button, shows user a display on the screen
+timer.addEventListener("click", function () {
+    // We are creating if else statements for timer to function properly
+    if (holdInterval === 0) {
+        holdInterval = setInterval(function () {
+            // Decrement timer by seconds
+            secondsLeft--;
+            currentTime.textContent = "Time: " + secondsLeft;
+            // Shows current time counting down by 1 second
+            // Create if statement for when time runs out.
+            if (secondsLeft <= 0) {
+                clearInterval(holdInterval);
+                allDone();
+                currentTime.textContent = "Time's up!";
+            }
+        }, 1000);
+    }
+    
