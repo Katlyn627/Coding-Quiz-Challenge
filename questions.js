@@ -21,7 +21,7 @@ var questions = [
         answer: "debugging"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
+        title: "A tool used during the debugging process for printing content to the console is called:",
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
