@@ -17,7 +17,7 @@ var questions = [
     },
     {
         title: "_______ is the process of finding errors and fixing them within a program.",
-        choices: ["compiling", "executing", "debugging", "scanning"],
+        choices: ["Compiling", "Executing", "Debugging", "Scanning"],
         answer: "debugging"
     },
     {
