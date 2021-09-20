@@ -1,5 +1,5 @@
 /* Created main content styling */
-#maincontent {
+#wrapper {
     position: absolute;
     left: 30%;
     top: 20%;
@@ -7,7 +7,7 @@
     height: 500px;
 }
 /* Created start quiz styling */
-#startQuiz {
+#startTime {
     background-color: purple;
     margin-left: 33%;
     padding: 15px 32px;
@@ -19,7 +19,7 @@
     margin: 20px;
 }
 /* Created timer styling */
-#startTimer {
+#currentTime {
     float: right;
 }
 /* Created back button styling */
