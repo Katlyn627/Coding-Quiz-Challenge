@@ -47,32 +47,14 @@ var score = 0;
 var questionIndex = 0;
 
 // Declared variables for working code functions
-var currentTime = document.querySelector("#currentTimer");
+var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#maincontent");
+var wrapper = document.querySelector("#wrapper");
 
 // Created variables for timer function
 var secondsLeft = 120;
 // Hold interval for time
-var holdInterval = 0;
-// Holds penalty time for incorrect questions
-var penalty = 10;
-// Creates new element
-var ulCreate = document.createElement("ul");
-// Declared variables
-var score = 0;
-var questionIndex = 0;
-
-// Declared variables for working code functions
-var startTimer = document.querySelector("#startTimer");
-var timer = document.querySelector("#startTime");
-var questionsDiv = document.querySelector("#questionsDiv");
-var maincontent = document.querySelector("#maincontent");
-
-// Created variables for timer function
-var secondsLeft = 120;
-// Hold interval for timem
 var holdInterval = 0;
 // Holds penalty time for incorrect questions
 var penalty = 10;
@@ -86,13 +68,13 @@ timer.addEventListener("click", function () {
         holdInterval = setInterval(function () {
             // Decrement timer by seconds
             secondsLeft--;
-            startTimer.textContent = "Time: " + secondsLeft;
+            currentTime.textContent = "Time: " + secondsLeft;
             // Shows current time counting down by 1 second
             // Create if statement for when time runs out.
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
-                startTimer.textContent = "Time's up!";
+                currentTime.textContent = "Time's up!";
             }
         }, 1000);
     }
@@ -157,7 +139,7 @@ function compare(event) {
 // Create quiz end fuction and append last page
 function allDone() {
     questionsDiv.innerHTML = "";
-    startTimer.innerHTML = "";
+    currentTime.innerHTML = "";
 
     // Create heading for end of quiz page:
     var createH1 = document.createElement("h1");
@@ -223,7 +205,7 @@ function allDone() {
             } else {
                 allScores = JSON.parse(allScores);
             }
-            allScores.push(finalScore);
+            allScores.search(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             // Travels to final page
