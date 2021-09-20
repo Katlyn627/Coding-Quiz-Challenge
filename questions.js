@@ -96,4 +96,28 @@ timer.addEventListener("click", function () {
             }
         }, 1000);
     }
-    
+    // Renders questions index function
+    render(questionIndex);
+});
+
+// Create funtion to render questions and choices with variables above: 
+function render(questionIndex) {
+    // Clears existing data 
+    questionsDiv.innerHTML = "";
+    ulCreate.innerHTML = "";
+    // For loops to loop through all questions
+    for (var i = 0; i < questions.length; i++) {
+        // Appends question title only
+        var userQuestion = questions[questionIndex].title;
+        var userChoices = questions[questionIndex].choices;
+        questionsDiv.textContent = userQuestion;
+    }
+    // New choice for each question
+    userChoices.forEach(function (newItem) {
+        var listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        questionsDiv.appendChild(ulCreate);
+        ulCreate.appendChild(listItem);
+        listItem.addEventListener("click", (compare));
+    })
+}
