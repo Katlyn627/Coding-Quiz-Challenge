@@ -8,7 +8,8 @@
 }
 /* Created start quiz styling */
 #startTime {
-    background-color: purple;
+    background-color:teal;
+    font-family: 'Grechen Fuemen', cursive;;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
@@ -26,9 +27,10 @@
 }
 /* Created back button styling */
 #goBack {
-    background-color: purple;
+    background-color:teal;
     position: relative;
     padding: 10px;
+    font-family: 'Grechen Fuemen', cursive;
     font-size: 20px;
     color: white;
     top: 30%;
@@ -39,9 +41,10 @@
 }
 /* Created clear button styling */
 #clear {
-    background-color: purple;
+    background-color:teal;
     position: relative;
     padding: 10px;
+    font-family: 'Grechen Fuemen', cursive;
     font-size: 20px;
     color: white;
     top: 30%;
@@ -55,15 +58,17 @@ label {
 input {
     margin-bottom: 20px;
     width: 50%;
-    border: 1px solid lightgray;
+    border: 1px solid gold;
 }
 /* Create h1 styling */
 h1 {
+    font-family: 'Grechen Fuemen', cursive;
     text-align: center;
 }
 /* Create line styling */
 li {
-    background-color: purple;
+    font-family: 'Grechen Fuemen', cursive;
+    background-color:teal;
     margin-top: 10px;
     padding: 5px 15px;
     width: 80%;
@@ -72,7 +77,8 @@ li {
 }
 /* Create submit button styling */
 #Submit {
-    background-color: purple;
+    font-family: 'Grechen Fuemen', cursive;
+    background-color:teal;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
