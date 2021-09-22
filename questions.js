@@ -18,7 +18,7 @@ var questions = [
     {
         title: "_______ is the process of finding errors and fixing them within a program.",
         choices: ["Compiling", "Executing", "Debugging", "Scanning"],
-        answer: "debugging"
+        answer: "Debugging"
     },
     {
         title: "A tool used during the debugging process for printing content to the console is called:",

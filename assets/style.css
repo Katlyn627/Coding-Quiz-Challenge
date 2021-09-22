@@ -1,5 +1,7 @@
 /* Created main content styling */
 #wrapper {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     position: absolute;
     left: 30%;
     top: 20%;
@@ -8,6 +10,8 @@
 }
 /* Created start quiz styling */
 #startTime {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     background-color:teal;
     font-family: 'Grechen Fuemen', cursive;;
     margin-left: 33%;
@@ -17,10 +21,19 @@
 }
 /* Created questions styling */
 #questionDiv {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     margin: 20px;
+}
+#title
+{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
 }
 /* Created timer styling */
 #currentTime {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     position:fixed;
     top:0px;
     right:0px;
@@ -39,6 +52,16 @@
     text-align: center;
     text-decoration: none;
 }
+a
+{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
+}
+p
+{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
+}
 /* Created clear button styling */
 #clear {
     background-color:teal;
@@ -53,9 +76,13 @@
 }
 /* Adjust label and input styling */
 label {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     margin-right: 10px;
 }
 input {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
     margin-bottom: 20px;
     width: 50%;
     border: 1px solid gold;
@@ -86,6 +113,9 @@ li {
 }
 /* Create div styling */
 #createDiv {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: medium;
+    color:black;
     margin-top: 20px;
     border-top: 1px solid lightgray;
 }
@@ -101,7 +131,9 @@ li {
     }
 
     a {
+        font-family: 'Grechen Fuemen', cursive;
         margin-left: 20%;
+
     }
         #goBack {
             
