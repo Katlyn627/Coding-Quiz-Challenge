@@ -56,11 +56,14 @@ a
 {
     font-family: 'Grechen Fuemen', cursive;
     font-size: medium;
+    color: black;
+    text-decoration: none;
 }
 p
 {
     font-family: 'Grechen Fuemen', cursive;
     font-size: medium;
+    color: black;
 }
 /* Created clear button styling */
 #clear {
@@ -85,7 +88,8 @@ input {
     font-size: medium;
     margin-bottom: 20px;
     width: 50%;
-    border: 1px solid gold;
+    border: 1px solid black;
+    border-width: thick;
 }
 /* Create h1 styling */
 h1 {
@@ -122,6 +126,8 @@ li {
 @media screen and (max-width: 786px) {
     /* Created workable media condtent to resize when on different devices */
         body {
+            font-family: 'Grechen Fuemen', cursive;
+            font-size: medium;
             max-width: 786px;
         }
     /* Re-sized main content to fit proper devices  */
