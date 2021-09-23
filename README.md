@@ -30,6 +30,6 @@ THEN I can save my initials and my score
 
 ## Deployment
 
-Public Page:
+Public Page: https://katlyn627.github.io/Coding-Quiz-Challenge/
 
-Github:
+Github: https://github.com/Katlyn627/Coding-Quiz-Challenge
