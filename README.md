@@ -2,7 +2,8 @@
 
 ## Mock-Up
 
-<img href= assets\images\CodingQuiz1.gif>
+![CodingQuiz1](https://user-images.githubusercontent.com/86095070/134438051-60155d45-f8a5-4afd-84f1-2b3dfaeacf50.gif)
+
 
 ## User Story
 
