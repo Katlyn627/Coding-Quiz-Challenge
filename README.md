@@ -2,8 +2,7 @@
 
 ## Mock-Up
 
-![CodingQuiz1](https://user-images.githubusercontent.com/86095070/134438051-60155d45-f8a5-4afd-84f1-2b3dfaeacf50.gif)
-
+![CodingQuiz2](https://user-images.githubusercontent.com/86095070/134438728-dfb40fa7-1260-4b21-ad74-eef95d17c772.gif)
 
 ## User Story
 
