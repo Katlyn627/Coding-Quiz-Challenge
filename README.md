@@ -1,5 +1,9 @@
 # Coding-Quiz-Challenge
 
+## Mock-Up
+
+<img href= assets\images\CodingQuiz1.gif>
+
 ## User Story
 
 ```
@@ -23,8 +27,6 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
-
-## Mock-Up
 
 ## Deployment
 
